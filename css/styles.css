@@ -1,0 +1,354 @@
+    @import url(font-awesome.min.css);
+    @font-face {
+        font-family: "Raleway";
+        src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: "Raleway", Helvetica, sans-serif;
+        color: #444;
+    }
+    
+    h1,
+    h2 {
+        font-family: Helvetica;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #b8b8b8;
+        padding: 0.1em 0.3em;
+        font-size: 1em;
+        transition: color .2s ease-in-out;
+    }
+    
+    nav ul li a:hover {
+        color: #ffffff;
+    }
+    
+    li,
+    h2 {
+        display: flex;
+        margin: 0 10px;
+        margin-top: 20px;
+        padding: 0 10px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    h2 a {
+        color: #ffffff;
+        font-size: 1.5vw;
+        text-decoration: none;
+    }
+    
+    nav>ul,
+    .top-menu,
+    nav {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    .header {
+        justify-content: center;
+        background-image: url(../img/dark_tint.png), url(../img/bokeh_car_lights_bg.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .top-menu {
+        justify-content: space-between;
+        padding: 1em 3em;
+    }
+    
+    .banner-content {
+        color: #fff;
+        width: 95%;
+        text-align: center;
+        margin-top: 7.5rem;
+        line-height: 5rem;
+    }
+    
+    .banner-content p {
+        font-size: 1.5vw;
+        color: #ffffff;
+    }
+    
+    .banner-content h1 {
+        font-size: 4vw;
+    }
+    
+    .btn {
+        background-color: #fff;
+        border-radius: 2em;
+        text-align: center;
+        border: 0;
+        padding: 0.5em 1em;
+        font-size: 1.1vw;
+        cursor: pointer;
+        font-family: "Raleway";
+    }
+    
+    .btn-content,
+    .btn-personality button {
+        color: #fff;
+        background-color: #3cadd4;
+        font-size: 1.4vw;
+        padding: 0.7em 1.8em;
+        margin: auto;
+        margin-bottom: 9em;
+    }
+    
+    .main {
+        background-color: #f5f4f4;
+        text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    
+    .main h1 {
+        font-size: 3vw;
+        line-height: 2em;
+    }
+    
+    .main>p {
+        font-size: 1.5vw;
+        color: rgb(122, 122, 122);
+        margin-bottom: 3rem;
+    }
+    
+    .main-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 1.5em;
+    }
+    
+    .fa {
+        display: flex;
+        color: white;
+        padding: 45px;
+        border-radius: 50%;
+        font-size: 36px;
+    }
+    
+    .rounded {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: 1px solid rgba(144, 144, 144, 0.25);
+        border-radius: 1%;
+        margin: 1em;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 23rem;
+        height: 23rem;
+        color: rgb(122, 122, 122);
+    }
+    
+    .rounded h2 {
+        margin-bottom: 1em;
+        justify-content: flex-end;
+        text-align: center;
+        justify-content: center;
+        font-size: 1.5vw;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        .main-box {
+            display: flex;
+            flex-direction: column;
+            font-size: 3vw;
+        }
+        .rounded h2 {
+            font-size: 4vw;
+        }
+    }
+    /* -----------------------footer------------------------- */
+    
+    .about {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .about-header {
+        text-align: center;
+        line-height: 2em;
+        margin-top: 3em;
+    }
+    
+    .about-header h1 {
+        font-size: 3vw;
+        line-height: 1.5em;
+    }
+    
+    .about-header p {
+        font-size: 1.5vw;
+        color: rgb(122, 122, 122);
+        margin-bottom: 2.5em;
+    }
+    
+    .about-content {
+        border-top: 0.5px solid rgb(122, 122, 122);
+        border-bottom: 0.5px solid rgb(122, 122, 122);
+        padding-top: 3em;
+        padding-bottom: 2em;
+        margin: 2em 0;
+    }
+    
+    .about-content>* {
+        float: left;
+        text-align: left;
+    }
+    
+    .about-content:before,
+    .about-content:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    .profile {
+        width: 25%;
+    }
+    
+    .profile img {
+        border-radius: 50%;
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .profile h3 {
+        font-size: 1.1vw;
+        margin-top: 20px;
+        line-height: 1.5em;
+    }
+    
+    .profile p {
+        font-size: 1vw;
+        color: rgb(122, 122, 122);
+    }
+    
+    @media only screen and (max-width:800px) {
+        .profile {
+            width: 50%;
+            margin-top: 10px;
+        }
+        .profile h3 {
+            font-size: 2vw;
+            margin-top: 20px;
+            line-height: 1em;
+        }
+        .profile p {
+            font-size: 2vw;
+            color: rgb(122, 122, 122);
+        }
+    }
+    
+    .btn-personality {
+        width: 70%;
+        margin: auto;
+    }
+    
+    .btn-personality p {
+        font-size: 14px;
+        line-height: 1.5em;
+        margin-top: 4em;
+    }
+    
+    .btn-personality button {
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+    /* -------------------- services ---------------------- */
+    
+    .services {
+        background-color: #3cadd4;
+        color: #ffffff;
+        text-align: center;
+    }
+    
+    .services h1 {
+        padding-top: 3em;
+        padding-bottom: 0.2em;
+        font-size: 3vw;
+    }
+    
+    .services p {
+        font-size: 1.4vw;
+        margin-bottom: 2.5em;
+    }
+    
+    .services input[type="text"],
+    input[type="email"] {
+        width: 21.5%;
+        height: 3.2em;
+        border-radius: 5px;
+        border: 0;
+        margin: 0 0.8em;
+        margin-bottom: 2em;
+        padding: 10px;
+    }
+    
+    .services textarea {
+        width: 45%;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 2em !important;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    
+     ::placeholder {
+        color: #858585;
+        font-size: 15px;
+        font-family: "Raleway";
+    }
+    
+    .services button {
+        background-color: #383b43;
+        color: #ffffff;
+        font-size: 1.4vw;
+        padding: 0.8em 2em;
+        margin-bottom: 5em;
+        cursor: pointer;
+    }
+    /* -------------------------footer-bottom----------------------- */
+    
+    .footer-bottom {
+        width: 100%;
+        background: #383b43;
+        padding: 5.5em 0em 5.5em;
+        font-size: 14px;
+    }
+    
+    .footer-text {
+        width: 80%;
+        margin: auto;
+        color: #858585;
+    }
+    
+    .footer-text>li {
+        display: inline-block;
+    }
+    
+    .footer-text a {
+        color: #858585;
+        text-decoration: none;
+        margin-top: 2px;
+    }
+    
+    .footer-text a:hover {
+        text-decoration: underline;
+        transition: color 0.3s ease-in-out;
+        color: yellow;
+    }
